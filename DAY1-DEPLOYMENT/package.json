@@ -1,0 +1,14 @@
+{
+  "name": "day1-deployment",
+  "version": "1.0.0",
+  "description": "Basic backend application deployment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "Tanay Burbure",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
