@@ -1,9 +1,17 @@
 import './App.css'
 import { ChaiCard } from './components/ChaiCard.tsx'
+import ChaiList from './components/ChaiList.tsx'
 import { Counter } from './components/Counter.tsx'
+import type {Chai} from "./types.ts"
+
+const menu:Chai[] = [
+  {id:1 , name: "Masala" , price:25},
+  {id:2 , name: "Ginger" , price:45},
+  {id:3 , name: "Lemon" , price:35}
+]
 
 function App() {
-  return (
+  return ( 
     <>
       <div>
         <h1>Vite + React</h1>
@@ -12,6 +20,11 @@ function App() {
       </div>
       <div>
         <Counter/>
+      </div>
+      <div>
+        <ChaiList
+        items={menu}
+        />
       </div>
     </>
   )
